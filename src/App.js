@@ -1,4 +1,6 @@
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import Portfolio from "./components/Portfolio";
 import GlobalStyle from "./styles/GlobalStyle";
 
 function App() {
@@ -6,6 +8,8 @@ function App() {
     <>
       <GlobalStyle />
       <Banner />
+      <Portfolio />
+      <Footer />
     </>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import {
   NavbarContainer,
   NavbarNav,
+  NavLogo,
   NavbarMenu,
   NavbarItem,
   NavbarLink,
@@ -10,6 +11,7 @@ import {
 const Navbar = () => (
   <NavbarNav>
     <NavbarContainer>
+      <NavLogo>JP.Duprat</NavLogo>
       <NavbarMenu>
         <NavbarItem>
           <NavbarLink>Portfolio</NavbarLink>

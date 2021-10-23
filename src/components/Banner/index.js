@@ -2,15 +2,18 @@ import React from "react";
 import Navbar from "../Navbar";
 import {
   BannerBg,
-  BannerCircle,
   BannerContainer,
   BannerContent,
   BannerLayer,
-  BannerH1,
-  BannerHr,
+  BannerRow,
+  BannerH2,
+  BannerP,
+  BannerImg,
+  BannerButton,
 } from "./BannerElements";
 import imgFundo from "../../img/fundos.jpg";
-import { Col, Row } from "styled-bootstrap-grid";
+import imgProjetta from "../../img/projetta.png";
+import { Col } from "styled-bootstrap-grid";
 
 const Banner = () => (
   <BannerContainer>
@@ -18,14 +21,21 @@ const Banner = () => (
     <BannerBg img={imgFundo}></BannerBg>
     <BannerContent>
       <Navbar />
-      <BannerCircle>
-        <BannerH1>
-          Hi! <br />
-          I'm Johnny
-        </BannerH1>
-        <BannerHr />
-        <span>Full Stack Developer</span>
-      </BannerCircle>
+      <BannerRow>
+        <Col md>
+          <BannerH2>Projetta Expositores</BannerH2>
+          <BannerP>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </BannerP>
+          <BannerButton>Saiba mais</BannerButton>
+        </Col>
+        <Col md>
+          <BannerImg src={imgProjetta} />
+        </Col>
+      </BannerRow>
     </BannerContent>
   </BannerContainer>
 );
